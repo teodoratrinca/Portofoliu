@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import "./nav-bar.css";
 
-.startImg{
+:root{
+    --primary:#e5d9c5;
+    --dark:#b3a894;
+    --light:#fffff8;
+    --fontFamily:'Roboto', sans-serif;
+}
+.aboutMe-img{
     display: block;
     height: 100%; 
     width: 100%;
     object-fit: contain;
     margin-top: 0.5%;
+}
+.aboutMe-info{
+    display: flex;
+    font-family: var(--fontFamily);
 }
