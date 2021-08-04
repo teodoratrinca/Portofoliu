@@ -1,0 +1,9 @@
+@import "./nav-bar.css";
+
+.startImg{
+    display: block;
+    height: 100%; 
+    width: 100%;
+    object-fit: contain;
+    margin-top: 0.5%;
+}

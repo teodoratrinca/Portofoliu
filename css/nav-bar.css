@@ -1,0 +1,101 @@
+:root{
+    --primary:#e5d9c5;
+    --dark:#b3a894;
+    --light:#fffff8;
+}
+
+.logo{
+    padding: 2px;
+    height: 4em;
+}
+
+header{
+    background: #E5D9C3;
+    text-align: center;
+    position: relative; 
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    font-family: var(--textFont);
+    /* padding: 5px 20px 5px 20px; */
+   
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+}
+.menu .menu-item{
+    font-family: var(--textFont);
+    padding: 0px 20px 0px 20px;
+}
+
+.menu .menu-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    font-family: var(--textFont);
+}
+
+.menu .menu-item a:hover{
+    color:#fffff8;
+}
+
+.menu-bars .icon {
+    display: none;
+}
+
+.active-menu a{
+    color: var(--orangeBright)  !important;
+}
+
+@media screen and (max-width: 800px){
+    .menu div{
+        display: none;
+    }
+}
+
+@media screen  and (max-width:800px){
+
+    .responsiveMenu{
+        position:relative;
+        
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+    .responsiveMenu .icon{
+        position: absolute;
+        right: 0;
+        top:0;
+        
+    }
+    .responsiveMenu  div{
+        float:none;
+        display: block;
+        text-align: left;
+    }
+    .responsiveMenu .menu-item a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.0rem;
+        text-transform: uppercase;
+        font-family: var(--textFont);
+        display: flex;
+        padding: 5px ;
+    }
+    .responsiveMenu a:hover{
+        color:var(--orangeBright);
+    }
+   
+    
+}
