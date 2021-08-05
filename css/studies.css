@@ -1,0 +1,14 @@
+.studies-info-img{
+    
+    float: left;   
+    margin: 0px 33px 11px 0px;
+}
+.studies-info{
+    background-color: rgb(209, 127, 49);
+    font-size: 22px;
+}
+
+.studies-img{
+    width: 600px;
+    height: 400px;
+}

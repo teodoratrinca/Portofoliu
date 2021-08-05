@@ -2,6 +2,7 @@
 @import "./nav-bar.css";
 @import "theme.css";
 @import "switch.css";
+@import "./studies.css";
 
 :root{
     --primary:#e5d9c5;
