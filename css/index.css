@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import "./nav-bar.css";
+@import "theme.css";
+@import "switch.css";
 
 :root{
     --primary:#e5d9c5;
@@ -7,6 +9,7 @@
     --light:#fffff8;
     --fontFamily:'Roboto', sans-serif;
 }
+
 .theme{
     width: 130px;
 }
@@ -51,7 +54,7 @@
   }
   
   input:checked + .slider {
-    background-color: black;
+    background-color: rgb(55, 56, 55);
   }
   
   input:focus + .slider {
