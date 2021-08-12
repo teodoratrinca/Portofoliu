@@ -2,61 +2,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 :root{
-    --primary:#e5d9c5;
-    --dark:#b3a894;
-    --light:#fffff8;
-    --fontFamily:'Roboto', sans-serif;
+  --primary:#E67E22;
+  --dark:#373837; 
+  --light:#e5d9c5;
+  --fontFamily:'Roboto', sans-serif;
 }
 
 .logo{
-    padding: 2px;
-    height: 4em;
+  padding: 2px;
+  height: 4em;
 }
 
 header{
-    background: #E5D9C3;
-    text-align: center;
-    position: relative; 
-    display: flex !important;
-    flex-direction: row;
-    justify-content: space-between;
-    width:100%;
-    font-family: var(--fontFamily);
+  background:var(--dark);
+  text-align: center;
+  position: fixed; 
+  display: flex ;
+  flex-direction: row;
+  justify-content: space-between;
+  width:98.7%;
+  font-family: var(--fontFamily);
    
 }
 
 .menu{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    width:100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width:100%;
 }
 .menu .menu-item{
-    font-family: var(--textFont);
-    padding: 0px 20px 0px 20px;
+  font-family: var(--textFont);
+  padding: 0px 20px 0px 20px;
 }
 
 .menu .menu-item a {
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    text-transform: uppercase;
-    font-family: var(--textFont);
+  color: var(--light);
+  text-decoration: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: var(--textFont);
 }
 
 .menu .menu-item a:hover{
-    color:black;
+  color:var(--primary);
 }
 
-@media screen and (max-width: 800px){
-    .menu div{
-        display: none;
-    }
+
+#active-menu a{
+  color: var(--primary);
 }
 
-@media screen  and (max-width:800px){
-   
+.theme{
+  width: 130px;
+}
+
+.switch {
+  position: relative;
+  display: inline-flex;
+  width: 60px;
+  height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--light);
+  -webkit-transition: .4s;
+  transition: .4s;
+  }
+  
+  .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--primary);
+  -webkit-transition: .4s;
+  transition: .4s;
+  }
+  
+  input:checked + .slider {
+  background-color: var(--primary);
+  }
+  
+  input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+  border-radius: 34px;
+  }
+  
+  .slider.round:before {
+  border-radius: 50%;
+  }
     
-}
