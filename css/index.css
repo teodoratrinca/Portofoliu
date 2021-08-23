@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 @import "./nav-bar.css";
-@import "theme.css";
-@import "switch.css";
-@import "./studies.css";
+
 
 :root{
     --primary:#E67E22;
     --dark:#373837; 
     --light:#e5d9c5;
     --fontFamily:'Roboto', sans-serif;
+    --secondfontFamily: 'Gilda Display', serif;
 }
 
 /* body{
@@ -20,22 +20,34 @@
     height: 100%; 
     width: 100%;
     object-fit: contain;
-    padding-top: 6.5%;
+    padding-top: 3.5%;
 }
 
 .aboutMe-info{
     width: inherit;
-    display: flex;
+    display: grid;
     font-family: var(--fontFamily);
     justify-content: space-around;
+    
 }
 
-.aboutMe-info-col1{ 
-    width: 60%;
+.aboutMe-info-title{ 
+    display: flex;
+    text-transform: uppercase;
+    font-family: var(--textFont);
+    font-size: 28px;
+    justify-content: space-around;
+    height: 180px;
+    align-items: center;
+    text-align: center;
 }
-.aboutMe-info-col2{ 
-    width:30%;
-    font-size: 32px;
-    font-weight: bold;
+
+.aboutMe-info-description{
+    width: 800px;
+    height: 500px;
+    font-size: 25px;
+    text-align: center;
+    ;
 }
+
 
