@@ -9,7 +9,7 @@
 
  footer{
      background-color: var(--dark);
-     height: 200px;
+     height: 150px;
      width: 100%;
      display: flex;
 
@@ -22,7 +22,7 @@
 
 .footer-left-contact{
     display: flex;
-    margin-top: 60px;
+    margin-top: 45px;
     justify-content: space-around;
 
 }
@@ -32,27 +32,26 @@
 }
 
 
- .footer-center img{
-      width: 200px;
-      height: 180px;
-      display: block;
+.footer-center img{
+  width: 149px;
+  height: 129px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 18px;
  }
 
  .footer-right{
-    width: 33.3%; 
-    display: block;
+   width: 33.3%; 
+   display: block;
  }
 .footer-right-socialmedia{
-    display: flex;
-    margin-top: 60px;
-    justify-content: space-around;
+  display: flex;
+  margin-top: 45px;
+  justify-content: space-around;
     
 }
  .fa{ 
-     color: var(--light);
-   font-size: 25px;
-
+  color: var(--light);
+  font-size: 25px;
  }
